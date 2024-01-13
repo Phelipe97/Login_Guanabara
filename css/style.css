@@ -1,6 +1,6 @@
 /* 
     Paleta de cores:
-    azul:#30f0d0
+    azul:#30c3f0
     verde:#1ea77e
 */
 * {
@@ -32,9 +32,11 @@ main{
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width .5s, height .5s;
+    transition-timing-function: ease;
 }
 #imagem{
-    background: #1e67a7 url(/imagens/arvores.jpg) no-repeat;
+    background: #1e67a7 url(../imagens/arvores.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     height: 200px;
