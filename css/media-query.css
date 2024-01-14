@@ -23,6 +23,7 @@ Grandes telas: acima de 1200px
         float: right;
         width: 70%;
     }
+
 }
 
 @media screen and (min-width:992px){
@@ -35,10 +36,16 @@ Grandes telas: acima de 1200px
     #imagem{
         width: 50%;
         height: 100%;
-        float: left;
+        float: right;
     }
     #formulario{
-        float: right;
+        float: left;
         width: 50%;
+    }
+    #formulario h1{
+        font-size: 2em;
+    }
+    #formulario p{
+        font-size: 1.2em;
     }
 }
