@@ -25,13 +25,13 @@ main{
     position: absolute;
     top: 50%;
     left:50%;
-    transform: translate(-50%,-50%);
     background-color: white;
     width: 250px;
-    height: 510px;
+    height: 500px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transform: translate(-50%,-50%);
     transition: width .5s, height .5s;
     transition-timing-function: ease;
 }
@@ -57,19 +57,31 @@ main{
 .campo{
     background-color: var(--azul);
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px 5px 0px;
+    border: 2px solid black;
 }
 form label{
     display: none;
 }
 #iemail,#ipass{
-    width: 80%;
-    height: 40px;
-    
+    width: calc(100% - 30px);
+    height: 100%;
+    background-color: var(--verde);
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
 }
-.material-symbols-outlined{
-    font-size: 1.2em;
+#iemail:focus-within,
+#ipass:focus-within{
+    background-color: white;
+}
+.fi{
+    width: 40px;
+    font-size:1em;
+    color: white;
+    padding: 5px;
+    
 }
 input[type=submit]{
    display: block;
@@ -96,6 +108,7 @@ input[type=submit]:hover{
     font-size: 1em;
     width: 100%;
     height: 40px;
+    background-color: #00ffdd;
     border: 1px solid #0059ff;
     color: 0059ff;
     border-radius: 5px;

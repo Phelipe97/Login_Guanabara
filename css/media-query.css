@@ -8,11 +8,12 @@ Grandes telas: acima de 1200px
 */
 
 @media screen and (min-width:768px)and (max-width:992px) {
-    body{
+    body{/* Confiração para tablets */
         background-image: linear-gradient(var(--verde),var(--azul));
     }
     #login{ 
         width:80% ;
+        height:300px;
     }
     #imagem{
         width: 30%;
@@ -23,17 +24,15 @@ Grandes telas: acima de 1200px
         float: right;
         width: 70%;
     }
-    form label{
-        display: inline-block;
-    }
 }
 
 @media screen and (min-width:992px){
-    body{
+    body{/* Confiração para telas grandes */
         background-image: linear-gradient(var(--verde),var(--azul));
     }
     #login{ 
-        width:950px ;
+        width:950px;
+        height: 300px;
     }
     #imagem{
         width: 50%;
@@ -43,14 +42,5 @@ Grandes telas: acima de 1200px
     #formulario{
         float: left;
         width: 50%;
-    }
-    #formulario h1{
-        font-size: 2em;
-    }
-    #formulario p{
-        font-size: 1.2em;
-    }
-    form label{
-        display: inline-block;
     }
 }
